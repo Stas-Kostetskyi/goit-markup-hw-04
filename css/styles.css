@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
   background-color: var(--basic-white-text);
@@ -81,7 +81,7 @@ a {
 .logo {
   color: var(--accent-color);
 
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -89,7 +89,7 @@ a {
 .logo-header {
   color: var(--logo-second-color);
 
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -118,6 +118,7 @@ a {
 /* main */
 .cap {
   max-width: 1600px;
+  max-height: 600px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 200px;
@@ -132,6 +133,7 @@ a {
       var(--background-gradient-hero)
     ),
     url(../images/hero.jpg);
+  background-color: var(--cap-footer-background-color);
 
   outline: solid 1px tomato;
 }
@@ -189,7 +191,30 @@ a {
   flex-basis: calc((100% - 3 * 30px) / 4);
   text-align: left;
 }
+.feature-item-list::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-background-color);
+  /* outline: 1px solid tomato; */
+}
+.icon-antena::before {
+  background-image: url(../images/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
 
+.icon-diagramm::before {
+  background-image: url(../images/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
 .features-tittle {
   margin-top: 0;
   margin-bottom: 10px;
@@ -416,7 +441,7 @@ a {
 .logo-footer {
   color: var(--basic-white-text);
 
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
