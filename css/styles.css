@@ -11,10 +11,11 @@
   --order-hover-background: #fbff23;
   --header-border-color: #ececec;
   --border-projects: #eeeeee;
+  --background-gradient-hero: rgba(47, 48, 58, 0.4);
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
   background-color: var(--basic-white-text);
@@ -80,7 +81,7 @@ a {
 .logo {
   color: var(--accent-color);
 
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -88,7 +89,7 @@ a {
 .logo-header {
   color: var(--logo-second-color);
 
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -116,10 +117,19 @@ a {
 
 /* main */
 .cap {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+
   background-color: var(--cap-footer-background-color);
   color: var(--basic-white-text);
+
+  background-image: linear-gradient (to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+
+  outline: solid 1px tomato;
 }
 
 .cap-tittle {
@@ -396,7 +406,7 @@ a {
 .logo-footer {
   color: var(--basic-white-text);
 
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
