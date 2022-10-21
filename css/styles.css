@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
   background-color: var(--basic-white-text);
@@ -90,7 +90,7 @@ a {
 .logo {
   color: var(--accent-color);
 
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -98,7 +98,7 @@ a {
 .logo-header {
   color: var(--logo-second-color);
 
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -477,7 +477,7 @@ a {
 .logo-footer {
   color: var(--basic-white-text);
 
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -538,13 +538,13 @@ a {
 }
 
 .footer-networks .socnetwork-list-link {
-  fill: #ffffff;
+  fill: var(--basic-white-text);
   background-color: rgba(255, 255, 255, 0.1);
 }
 .socnetwork-list-link:hover,
 .socnetwork-list-link:focus {
   background-color: var(--accent-color);
-  fill: #ffffff;
+  fill: var(--basic-white-text);
 }
 
 /* S T A S  */ ;
