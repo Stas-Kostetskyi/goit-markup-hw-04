@@ -12,10 +12,11 @@
   --header-border-color: #ececec;
   --border-projects: #eeeeee;
   --background-gradient-hero: rgba(47, 48, 58, 0.4);
+  --icon-color: #afb1b8;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
   background-color: var(--basic-white-text);
@@ -40,6 +41,19 @@ a {
 }
 .list {
   list-style: none;
+}
+/* ----- */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .container {
   width: 1200px;
@@ -85,23 +99,22 @@ a {
   display: inline-block;
   padding-top: 24px;
   padding-bottom: 25px;
-  /* margin-right: 93px; */
 }
 .logo {
-  color: var(--accent-color);
-
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+
+  color: var(--accent-color);
 }
 .logo-header {
-  color: var(--logo-second-color);
-
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+
+  color: var(--logo-second-color);
 }
 .nav .nav-link.current {
   color: var(--accent-color);
@@ -127,7 +140,7 @@ a {
 }
 .mail-list-icon {
   margin-right: 10px;
-  fill: #afb1b8;
+  fill: var(--icon-color);
 }
 
 /* <!-- герой --> */
@@ -181,18 +194,8 @@ a {
 }
 
 /* <!-- Особливості --> */
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
+/* наші переваги  */
+
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -206,9 +209,29 @@ a {
   flex-basis: calc((100% - 3 * 30px) / 4);
   text-align: left;
 }
+.features-tittle {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--tittle-text-color);
+}
+
+.features-tittle-txt {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
 /* варіант з псевдокласами--start */
 .feature-item-list::before {
-  content: '';
+  content: "";
   display: block;
   height: 120px;
   margin-bottom: 30px;
@@ -216,6 +239,8 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--secondary-background-color);
+
+  border-radius: 4px;
 }
 .icon-antena::before {
   background-image: url(../images/antenna.svg);
@@ -249,27 +274,6 @@ a {
 } */
 /* варіант з інлайн-спрайт svg end */
 
-/* наші переваги  */
-.features-tittle {
-  margin-top: 0;
-  margin-bottom: 10px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--tittle-text-color);
-}
-
-.features-tittle-txt {
-  margin: 0;
-
-  font-size: 14px;
-  line-height: 1.71;
-}
-
 /* <!-- Чим ми займаємося --> */
 .work {
   display: flex;
@@ -302,6 +306,7 @@ a {
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
+
   background-color: var(--secondary-background-color);
 }
 .team {
@@ -313,6 +318,7 @@ a {
   padding-bottom: 30px;
   flex-basis: calc((100% - 3 * 30px) / 4);
   text-align: center;
+
   background-color: var(--basic-white-text);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -385,14 +391,14 @@ a {
   width: 170px;
   height: 92px;
 
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
 }
 .customer-list-item:not(:last-child) {
   margin-right: 30px;
 }
 .customer-icon {
-  fill: #afb1b8;
+  fill: var(--icon-color);
 }
 
 /* портфоліо */
@@ -494,7 +500,7 @@ a {
 .logo-footer {
   color: var(--basic-white-text);
 
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -530,7 +536,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--basic-white-text);
   margin-bottom: 20px;
 }
 .network-item:not(:last-child) {
@@ -544,7 +550,7 @@ a {
   height: 44px;
   border-radius: 50%;
   background-color: transparent;
-  fill: #afb1b8;
+  fill: var(--icon-color);
 }
 .network-icon {
   /* width: 20px;
@@ -612,19 +618,17 @@ a {
   outline: none;
 }
 
-.customer-list-link:hover .customer-icon{
+.customer-list-link:hover .customer-icon {
   fill: var(--accent-color);
 }
-.customer-list-link:focus .customer-icon{
+.customer-list-link:focus .customer-icon {
   fill: var(--accent-color);
 }
 
-.mail-list-icon:hover {
+.mail-tel:hover .mail-list-icon {
   fill: var(--accent-color);
 }
-.mail-list-icon:focus{
+.mail-tel:focus .mail-list-icon {
   fill: var(--accent-color);
 }
-}
-
-/* S T A S  */ ;
+/* S T A S  */
