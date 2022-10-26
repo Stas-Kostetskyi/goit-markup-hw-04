@@ -14,12 +14,16 @@
   --background-gradient-hero: rgba(47, 48, 58, 0.4);
   --icon-color: #afb1b8;
   --btn-hover: #188ce8;
+  --backdrop: rgba(0, 0, 0, 0.2);
 }
 
 body {
+  padding-top: 80px;
+
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+
   background-color: var(--basic-white-text);
   color: var(--primary-text-color);
 }
@@ -67,8 +71,21 @@ a {
 /* <!-- хедер --> */
 .header {
   display: flex;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
   align-items: center;
+  min-height: 80px;
+
+  background-color: var(--basic-white-text);
   border-bottom: 1px solid var(--header-border-color);
+}
+
+.header {
 }
 .head {
   display: flex;
@@ -637,4 +654,36 @@ a {
 .mail-tel:focus .mail-list-icon {
   fill: var(--accent-color);
 }
+
+/* позиціювання */
+
+.projects-thumb {
+  position: relative;
+}
+.projects-thumb::before {
+  display: inline-block;
+  content: "";
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 0.5);
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translate(-50% -50%);
+  opacity: 0;
+}
+.projects-thumb:hover::before {
+  opacity: 1;
+}
+/* оверлей */
+/* .backdrop {
+  position: fixed;
+  width: 1600px;
+  height: 1024px;
+  left: 0px;
+  top: 0px;
+
+  background: var(--backdrop);
+} */
 /* S T A S  */
